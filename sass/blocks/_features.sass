@@ -1,0 +1,159 @@
+.offer
+    &_slider_third_wrap_footer_features
+        position: absolute 
+        width: 100%
+        transform: scale(0) translateY(-3000px) 
+        height: 100vh
+        opacity: 0
+        transition: 3s ease
+    &_slider_third_wrap_footer_features_active
+        width: 100%
+        position: relative
+        opacity: 1
+        transform: scale(1) translateY(0px) 
+        transition: 3s ease
+    &_slider_third_wrap_footer_features_wrap_span_first
+        +avenir
+        font-size: 56px 
+        color: #ffffff
+        opacity: 0.9
+    &_slider_third_wrap_footer_features_wrap_span
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    &_slider_third_wrap_footer_features_wrap_sigma
+        position: relative
+    &_slider_third_wrap_footer_features_wrap_li
+        //border: 1px solid #ffffff
+        list-style: none
+        margin-right: 80px
+    &_slider_third_wrap_footer_features_wrap_ul
+        //text-align: center
+        //flex-wrap: wrap 
+        //flex-basis: auto
+        //display: flex 
+        //justify-content: space-between
+        //align-items: center
+    &_slider_third_wrap_footer_features_wrap_first 
+        flex-wrap: wrap 
+        flex-basis: auto
+        display: flex 
+        justify-content: center
+        align-items: center
+    &_slider_third_wrap_footer_features_wrap_second
+        flex-wrap: wrap 
+        flex-basis: auto
+        display: flex 
+        justify-content: center
+        align-items: center
+    &_slider_third_wrap_footer_features_wrap_svg
+        transform: rotate(-90deg)
+    &_slider_third_wrap_footer_features_wrap_p
+        margin-bottom: 20px
+        text-align: center
+        color: #ffffff
+        +avenir
+        font-size: 28px 
+        color: #ffffff
+        opacity: 0.9
+        margin-top: 20px
+        padding: 0
+    &_slider_third_wrap_footer_features_title
+        position: relative
+        font-size: 42px 
+        text-align: center 
+        color: #ffffff
+        margin-bottom: 20px 
+        margin-top: 0 
+        padding: 0
+        +problack 
+        text-transform: uppercase
+    &_slider_third_wrap_footer_features_title::before 
+        transform: translateY(5px)
+        bottom: 0
+        position: absolute 
+        content: ''
+        height: 2px 
+        width: 100%
+        opacity: 0.3
+        background: #ffffff
+    &_slider_third_wrap_footer_features_wrap
+        position: relative
+        display: flex 
+        flex-wrap: wrap 
+        flex-basis: auto
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+    
+
+.circle_fill
+    --initialStroke: 490.0884539600077452001723677916
+    --transitionDuration: 0
+    stroke-opacity: 1
+    stroke-dasharray: var(--initialStroke)
+    stroke-dashoffset: var(--initialStroke)
+    transition: stroke-dashoffset var(--transitionDuration) ease
+
+.offer_slider_third_wrap_footer_features_wrap_li:nth-child(1) .offer_slider_third_wrap_footer_features_wrap_circle
+    fill: none
+    stroke-width: 3
+    stroke-opacity: 0.3
+    stroke-linecap: round
+    stroke: #AAFF00
+
+.offer_slider_third_wrap_footer_features_wrap_li:nth-child(2) .offer_slider_third_wrap_footer_features_wrap_circle
+    fill: none  
+    stroke-width: 3
+    stroke-opacity: 0.3
+    stroke-linecap: round
+    stroke: #FF00AA
+
+.offer_slider_third_wrap_footer_features_wrap_li:nth-child(3) .offer_slider_third_wrap_footer_features_wrap_circle
+    fill: none  
+    stroke-width: 3
+    stroke-opacity: 0.3
+    stroke-linecap: round
+    stroke: #AA00FF
+
+.offer_slider_third_wrap_footer_features_wrap_li:nth-child(4) .offer_slider_third_wrap_footer_features_wrap_circle
+    fill: none  
+    stroke-width: 3
+    stroke-opacity: 0.3
+    stroke-linecap: round
+    stroke: #00AAFF
+
+.offer_slider_third_wrap_footer_features_wrap_li:nth-child(5) .offer_slider_third_wrap_footer_features_wrap_circle
+    fill: none  
+    stroke-width: 3
+    stroke-opacity: 0.3
+    stroke-linecap: round
+    stroke: #ff7b25
+
+.offer_slider_third_wrap_footer_features_wrap_li:nth-child(6) .offer_slider_third_wrap_footer_features_wrap_circle
+    fill: none  
+    stroke-width: 3
+    stroke-opacity: 0.3
+    stroke-linecap: round
+    stroke: #82b74b
+
+
+#features_button
+    position: absolute
+    top: 0 
+    left: 0
+    background: #FF00AA
+    opacity: 0.9
+
+@media (max-width: 868px)
+    .offer
+        &_slider_third_wrap_footer_features_wrap
+            margin-left: -90px
+
+@media (max-width: 668px)
+    .offer
+        &_slider_third_wrap_footer_features_title
+            font-size: 24px
+        &_slider_third_wrap_footer_features_wrap
+            margin-left: -50px

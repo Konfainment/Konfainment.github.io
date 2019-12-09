@@ -1,0 +1,470 @@
+.offer
+    &_slider_third_wrap_footer_summary
+        //width: 100%
+        opacity: 0
+        transition: 1.5s ease 
+        transform: scale(0)
+        position: absolute
+    &_slider_third_wrap_footer_summary_active 
+        position: relative
+        opacity: 1
+        transform: scale(1)
+        transition: 1.5s ease 
+    &_slider_third_wrap_footer_summary_wrap_title
+        margin-top: 0px
+        font-size: 64px 
+        color: #ffffff
+        +problack
+        padding: 0
+        margin-bottom: 20px
+        text-transform: uppercase 
+        text-align: center
+        position: relative
+    &_slider_third_wrap_footer_summary_wrap_title::before
+        position: absolute 
+        content: ''
+        height: 2px 
+        transform: translateY(15px)
+        width: 100%
+        opacity: 0.2
+        left: 0
+        background: #ffffff
+        bottom: 0
+    &_slider_third_wrap_footer_summary_wrap_main_subtitle
+        margin-top: 0
+        letter-spacing: 2px
+        line-height: 30px
+        color: #ffffff
+        font-size: 15px
+        padding: 0
+        +avenir 
+        text-transform: uppercase
+        margin-bottom: 20px
+    &_slider_third_wrap_footer_summary_wrap_main_subtitle::before
+        left: 58%
+        top: 17%
+        opacity: 0.3
+        position: absolute 
+        content: ''
+        width: 50px 
+        height: 50px 
+        background: #0f33ff
+    &_slider_third_wrap_footer_summary_wrap_main_img
+        position: relative
+        margin-left: 20px
+        opacity: 0.9
+        border: 20px solid #0f33ff
+        background: #0c0c0c url('../img/photo_face.png') no-repeat right
+        width: 230px 
+        height: 295px
+        background-size: cover
+    &_slider_third_wrap_footer_summary_wrap_main_img:hover
+        //animation: img_photo 2s ease infinite 
+    &_slider_third_wrap_footer_summary_wrap_main
+        flex-wrap: wrap 
+        flex-basis: 100%
+        display: flex 
+        justify-content: space-between
+        align-items: center
+    &_slider_third_wrap_footer_skills
+        position: absolute 
+        transform: translateX(-5000px) scale(0) 
+        opacity: 0
+        transition: 1.5s ease 
+    &_slider_third_wrap_footer_skills_active 
+        position: relative
+        transform: translateX(0px) scale(1) 
+        opacity: 1
+        transition: 1.5s ease 
+    &_slider_third_wrap_footer_skills_wrap_title
+        font-size: 64px 
+        color: #ffffff
+        +problack
+        opacity: 1
+        text-transform: uppercase 
+        text-align: center 
+        margin-top: 0 
+        margin-bottom: 20px
+        padding: 0
+        position: relative
+    &_slider_third_wrap_footer_skills_wrap_title::before 
+        position: absolute 
+        content: ''
+        bottom: 0 
+        trnasform: translateY(25px)
+        height: 2px 
+        background: #ffffff
+        width: 100%
+        opacity: 0.2
+    &_slider_third_wrap_footer_skills_wrap_main_links
+        position: relative
+        color: #ffffff
+        font-size: 14px 
+        letter-spacing: 2px 
+        min-height: 20px 
+        text-transform: uppercase 
+        text-decoration: none
+        +proregular
+    &_slider_third_wrap_footer_skills_wrap_main_li
+        list-style: square outside
+        color: #ffffff
+        margin-bottom: 20px
+    &_slider_third_wrap_footer_skills_wrap_main
+        display: flex 
+        flex-wrap: wrap 
+        flex-basis: 100%
+        justify-content: space-around
+        align-items: center
+    &_slider_third_wrap_footer_skills_wrap_main_links::before 
+        position: absolute 
+        content: '' 
+        height: 1px 
+        opacity: 0.8
+        width: 100%
+        opacity: 0.3
+        background: #ffffff
+        bottom: -5%
+        transition: 1.5s ease 
+        transform: scale(0)
+    &_slider_third_wrap_footer_skills_wrap_main_links:hover 
+        color: #ffae42
+    &_slider_third_wrap_footer_skills_wrap_main_links:hover::before
+        transform: scale(1)
+        transition: 1.5s ease
+    &_slider_third_wrap_footer_experience
+        position: absolute 
+        transform: translateY(-3000px) scale(0) rotate(360deg)
+        opacity: 0
+        transition: 2s ease 
+    &_slider_third_wrap_footer_experience_active
+        position: relative 
+        transform: translateY(0px) scale(1) rotate(0)
+        opacity: 1
+        transition: 2s ease 
+    &_slider_third_wrap_footer_experience_wrap_main_title
+        text-transform: uppercase
+        margin: 0
+        position: relative
+        color: #ffffff 
+        font-size: 32px 
+        +proregular
+    &_slider_third_wrap_footer_experience_wrap_main_title::before 
+        position: absolute 
+        width: 10vw 
+        height: 5px 
+        content: ''
+        top: 60%
+        background: #50c878
+        opacity: 0.8
+    &_slider_third_wrap_footer_experience_wrap_title
+        position: relative
+        text-align: center
+        text-transform: uppercase
+        color: #ffffff 
+        font-size: 64px 
+        +problack
+        margin-top: 0 
+        margin-bottom: 20px
+    &_slider_third_wrap_footer_experience_wrap_title::before 
+        position: absolute 
+        bottom: 0
+        left: 0
+        background: #50c878
+        opacity: 0.4
+        width: 100% 
+        height: 2px 
+        content: ''
+    &_slider_third_wrap_footer_experience_wrap_main_img
+        opacity: 0.85
+        color: #ffffff
+        background: url('../img/upwork.svg') no-repeat right
+        //color: #ffffff
+        width: 128px 
+        margin-left: 0
+        height: 128px
+        transition: 2s ease
+    &_slider_third_wrap_footer_experience_wrap_main_img:hover 
+        transition: 2s ease
+        opacity: 1
+    &_slider_third_wrap_footer_experience_wrap_main_block
+        display: flex 
+        flex-wrap: wrap
+        flex-basis: 100%
+        justify-content: space-between 
+        align-items: center 
+    &_slider_third_wrap_footer_experience_wrap_main_li
+        margin-bottom: 20px
+        letter-spacing: 2px 
+        color: #ffffff
+        +proregular 
+        text-transform: uppercase 
+        font-size: 14px
+
+    
+.of_wrap 
+    transition: 2s ease
+
+@keyframes img_photo 
+    0% 
+        transform: scale(1)
+        opacity: 0.9
+    50% 
+        transform: scale(1.1)
+        opacity: 1
+    100%
+        transform: scale(1)
+        opacity: 0.9
+
+.fa-quote-right
+    opacity: 0.8
+    transform: translateY(-30px)
+    margin-top: 40px
+
+.card 
+    transform-style: preserve-3d
+    perspective: 1000px
+
+.fa-lightbulb
+    transform: scale(1.3)
+    margin-left: 200px
+    transition: 1.5s ease 
+    opacity: 0.9
+    color: #ffffff
+    background: transparent
+    animation: lamp 2s ease infinite
+
+@keyframes lamp 
+    0%
+        opacity: 0.9
+        color: #ffffff
+    50% 
+        color: #ffae42
+        opacity: 1
+    100%
+        opacity: 0.9
+        color: #ffffff
+
+.return_of_3
+    margin-top: 50px
+    //animation: return 2s ease infinite
+    position: absolute 
+    content: ''
+    text-decoration: none 
+    color: #ffffff
+    text-trnasform: uppercase 
+    +problack 
+    width: 50px 
+    height: 50px 
+    border-radius: 50%
+    background: linear-gradient(45deg ,#0f33ff, #391557)
+
+.return_button
+    display: flex 
+    justify-content: center 
+    align-items: center 
+
+.return_of_3::before 
+    position: absolute 
+    content: ''
+    transform: translate(-50%, -50%) rotate(45deg)
+    top: 50%
+    left: 50% 
+    height: 3px 
+    width: 25px
+    background: #ffffff
+    opacity: 0.9
+
+.return_of_3::after
+    position: absolute 
+    content: ''
+    transform: translate(-50%, -50%) rotate(-45deg)
+    top: 50%
+    left: 50% 
+    height: 3px 
+    width: 25px
+    background: #ffffff
+    opacity: 0.9
+
+@keyframes rotate 
+    from 
+        transform: rotate(0)
+    to 
+        transform: rotate(360deg)
+
+@keyframes return 
+    0%
+        transform: scale(1)
+    50%
+        transform: scale(1.2)
+    100% 
+        transform: scale(1)
+
+#summary_button
+    transform: translateY(-75px)
+
+#experience-button
+    position: absolute 
+    top: 60% 
+    left: 80%
+    background: #50c878
+    animation: rotation 2s ease infinite
+
+@keyframes rotation 
+    0%
+        transform: rotate(0deg)
+    25%
+        transform: rotate(45deg)
+    50%
+        transform: rotate(0deg)
+    75%
+        transform: rotate(-45deg)
+    100%
+        transform: rotate(0deg)
+    
+.fa-laptop-code
+    color: #50c878
+    opacity: 0.8
+    transform: translate(5px, 3px)
+
+#of_feature
+    opacity: 0.5
+    animation: text 10s cubic-bezier(.42, 0, .58, 1) infinite
+
+@keyframes text 
+    0%
+        opacity: 0.5
+    50%
+        opacity: 1
+    100%
+        opacity: 0.5
+
+@media (max-width: 868px)
+    .offer
+        &_slider_third_wrap_footer_skills_wrap
+            margin-left: -120px
+        &_slider_third_wrap_footer_experience_wrap
+            margin-left: -90px
+        &_slider_third_wrap_footer_summary_wrap
+            margin-left: -90px
+        &_slider_third_wrap_footer_summary_wrap_title::before
+            width: 100%
+            left: -5%
+        &_slider_third_wrap_footer_experience_wrap_main_img
+            margin-right: 40px
+        &_slider_third_wrap_footer_experience_wrap_title::before 
+            left: -3.5% 
+            transform: translateY(5px)
+
+@media (max-width: 668px)
+    #summary_button
+        transform: translate(-10vw, -400px)
+    #experience-button
+        position: absolute  
+        animation: none
+        //transform: translate(-10vw, -400px)
+        top: 1%
+        left: 40%
+    .offer
+        &_slider_third_wrap_footer_summary_wrap_title
+            margin-top: 0px
+            font-size: 24px 
+            color: #ffffff
+            +problack
+            padding: 0
+            margin-bottom: 20px
+            text-transform: uppercase 
+            text-align: center
+            position: relative
+        &_slider_third_wrap_footer_summary_wrap_main_subtitle
+            margin-top: 0
+            letter-spacing: 2px
+            line-height: 30px
+            color: #ffffff
+            font-size: 10px
+            padding: 0
+            +avenir 
+            text-transform: uppercase
+            margin-bottom: 20px
+        &_slider_third_wrap_footer_summary_wrap
+            margin-left: -50px
+        &_slider_third_wrap_footer_summary_wrap_title::before
+            width: 100%
+            left: -5%
+        &_slider_third_wrap_footer_summary_wrap_main_subtitle::before
+            left: 58%
+            top: 4%
+        &_slider_third_wrap_footer_skills_wrap_title
+            font-size: 24px 
+            color: #ffffff
+            +problack
+            opacity: 1
+            text-transform: uppercase 
+            text-align: center 
+            margin-top: 0 
+            margin-bottom: 20px
+            padding: 0
+            position: relative
+        &_slider_third_wrap_footer_skills_wrap_main_links
+            position: relative
+            color: #ffffff
+            font-size: 12px 
+            letter-spacing: 2px 
+            min-height: 20px 
+            text-transform: uppercase 
+            text-decoration: none
+            +proregular
+        &_slider_third_wrap_footer_skills_wrap
+            margin-left: -60px
+        &_slider_third_wrap_footer_experience_wrap_main_title
+            text-transform: uppercase
+            margin: 0
+            position: relative
+            color: #ffffff 
+            font-size: 14px 
+            +proregular
+        &_slider_third_wrap_footer_experience_wrap_title
+            position: relative
+            text-align: center
+            text-transform: uppercase
+            color: #ffffff 
+            font-size: 24px 
+            +problack
+            margin-top: 0 
+            margin-bottom: 20px
+        &_slider_third_wrap_footer_experience_wrap_title::before 
+            left: -3.5% 
+            transform: translateY(5px)
+        &_slider_third_wrap_footer_experience_wrap_main_li
+            margin-left: -25px
+        &_slider_third_wrap_footer_experience_wrap
+            margin-left: -65px
+        &_slider_third_wrap_footer_experience_wrap_main_img
+            margin-right: 20px
+            width: 64px 
+            height: 64px
+        &_slider_third_wrap_footer_experience_wrap_main_li
+            margin-bottom: 20px
+            letter-spacing: 2px 
+            color: #ffffff
+            +proregular 
+            text-transform: uppercase 
+            font-size: 14px
+
+@media (max-width: 370px)
+    .button_cv
+        left: 55vw
+    .fa-lightbulb
+        transform: scale(0.75)
+
+@media (max-width: 350px)
+    .fa-lightbulb
+        transform: scale(0.5)
+    #experience-button
+        position: absolute  
+        animation: none
+        //transform: translate(-10vw, -400px)
+        top: 1%
+        left: 40%
+        transform: scale(0.75)
+    .of_wrap 
+        margin-left: -20px

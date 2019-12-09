@@ -1,0 +1,103 @@
+.of_5
+    transform: translateX(-10000px)
+    transition: 2s ease
+    opacity: 0
+    position: absolute
+
+.offer
+    &_slider_firth
+        width: 100%
+        left: 0
+        position: absolute 
+        transform: translateX(0px)
+        transition: 2s ease
+        opacity: 1
+    &_slider_firth_wrap_title
+        padding: 0
+        margin-top: 21px
+        margin-bottom: 48px
+        +problack
+        color: #ffffff
+        font-size: 30px
+        text-align: center
+    &_slider_firth_wrap_block_buttons
+        margin-right: 50px
+        margin-bottom: 39px
+        width: 201px
+        height: 52px
+        border: 2px solid #ffffff
+        background-color: #0c0c0c
+        color: #ffffff
+        outline: none 
+        font-size: 18px 
+        +proregular
+        cursor: pointer
+    &_slider_firth_wrap_content
+        text-align: center
+        margin-left: 25px
+    &_slider_firth_wrap_block_buttons_active
+        position: relative
+        transition: 1.5s ease
+        width: 201px
+        height: 52px
+        border: 2px solid #0f33ff
+        background-color: #0f33ff
+        color: #ffffff
+        outline: none 
+        font-size: 18px 
+        +proregular
+        cursor: pointer
+    &_slider_firth_wrap_block_buttons_active::before 
+        transition: 1.5s ease
+        width: 2px 
+        transform: rotate(90deg)
+        height: 12px 
+        position: absolute 
+        content: ''
+        left: 20%
+        top: 38%
+        background: #ffffff
+    &_slider_firth_wrap_block_buttons_active::after
+        transition: 1.5s ease
+        width: 2px 
+        transform: rotate(0deg)
+        height: 12px 
+        position: absolute 
+        content: ''
+        left: 20%
+        top: 38%
+        background: #ffffff
+    &_slider_firth_wrap_form_footer
+        margin-left: 25px
+        justify-content: center
+        display: flex
+        text-align: center
+        flex-wrap: wrap
+        //margin-left: 150px
+    &_slider_firth_wrap_form
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        text-align: center
+        flex-basis: 100%
+    &_slider_firth_wrap_form_footer_button
+        margin-top: 63px
+        padding: 0
+        transform: translateX(-15px)
+        width: 400px
+        height: 51px 
+        background-color: #0f33ff
+        +proregular 
+        border: none
+        color: #ffffff
+        text-align: center 
+        text-transform: uppercase
+
+@keyframes buttons
+    from
+        border: 2px solid #ffffff
+        background-color: #0c0c0c
+    to
+        border: 2px solid #0f33ff 
+        background-color: #0f33ff 
+    

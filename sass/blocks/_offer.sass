@@ -1,0 +1,184 @@
+main 
+    margin-top: 13px
+    height: 100vh
+
+.offer_slider 
+    margin: 0 auto 
+
+.offer_slider_third_wrap_footer_summary::before 
+        
+        
+        
+.offer
+    display: flex
+    justify-content: center
+    //align-items: center
+    &_menu
+        transition: 1.5s ease 
+        transform: translateX(15px) scale(1)
+        z-index: 999
+        margin: 0 auto 
+        position: relative
+    &_menu_wrap_links
+        transition: 0.3s ease-out
+        opacity: 0.3
+        height: 20px
+        +proregular
+        font-size: 14px
+        color: #ffffff
+        text-decoration: none
+        text-transform: uppercase
+    &_menu_wrap_li
+        display: flex
+        margin-left: -5px
+        color: #ffffff
+        //display: flex
+        justify-content: center
+        //align-items: center
+        margin-bottom: 100px
+    &_menu_wrap_li:last-child
+        
+    &_menu_wrap_li::before 
+        transform: translate(-17px, 6px)
+        position: absolute 
+        width: 4px
+        height: 4px
+        border-radius: 20px
+        content: ''
+        background: #ffffff
+    &_menu_wrap_li_1
+        display: flex
+        margin-left: -5px
+        color: #ffffff
+        justify-content: center
+        text-align: center
+    &_menu_wrap_li_1::before
+        transition: 0.3s linear
+        transform: translate(-17px, 6px)
+        position: absolute 
+        width: 4px
+        height: 4px
+        border-radius: 20px
+        content: ''
+        background-color: #0f33ff
+    &_menu_wrap_ul
+        margin-left: 0
+        padding-left: 0
+    &_menu_wrap
+        z-index: 9999
+    &_menu_wrap_navbar
+    &_menu_wrap_navbar::before 
+        right: 47%
+        border-radius: 15px
+        top: 0
+        opacity: 0.15
+        width: 2px
+        height: 568px
+        background-color: #ffffff
+        position: absolute 
+        content: ''
+
+.li_active_1
+    opacity: 1
+    transform: translateX(-35px)
+    &::after
+        content: 'Home'
+        text-transform: capitalize
+        font-size: 14px
+        position: absolute 
+        transform: translateX(23px)
+
+.li_active_2 
+    opacity: 1
+    transform: translateX(-35px)
+    &::after 
+        content: 'Works'
+        text-transform: capitalize
+        font-size: 14px
+        position: absolute 
+        transform: translateX(23px)
+
+.li_active_3 
+    opacity: 1
+    transform: translateX(-35px)
+    &::after 
+        content: 'About'
+        text-transform: capitalize
+        font-size: 14px
+        position: absolute 
+        transform: translateX(23px)
+
+.li_active_4
+    opacity: 1
+    transform: translateX(-35px)
+    &::after 
+        content: 'Contact'
+        text-transform: capitalize
+        font-size: 14px
+        position: absolute 
+        transform: translateX(23px)
+
+.li_active_5
+    opacity: 1
+    transform: translateX(-35px)
+    &::after 
+        width: 50px
+        content: 'Hire Me'
+        text-transform: capitalize
+        font-size: 14px
+        position: absolute 
+        transform: translateX(23px)
+
+.li_middle_span
+    animation: li 3s ease infinite
+    transition: 1s ease
+    position: absolute 
+    content: ''
+    width: 4px
+    height: 4px
+    background-color: white
+    border-radius: 50%
+    left: 45%
+    transform: translate(1px, -55px)
+    opacity: 0.3
+
+.li_middle_span::before
+    animation: li 3s ease infinite
+    transition: 0.5s ease
+    z-index: 10000
+    position: absolute 
+    content: ''
+    width: 4px
+    height: 4px
+    background-color: white
+    border-radius: 50%
+    left: 45%
+    transform: translate(-2px, -30px)
+    //opacity: 0.3
+
+.li_middle_span::after
+    animation: li 1.5s ease infinite
+    transition: 1.5s ease
+    position: absolute 
+    content: ''
+    width: 4px
+    height: 4px
+    background-color: white
+    border-radius: 50%
+    left: 45%
+    transform: translate(-2px, 30px)
+    
+@keyframes li
+    0%
+        opacity: 0.3
+        background-color: #ffffff
+    50%
+        opacity: 0.7
+        background-color: #ffffff
+    100%
+        opacity: 0.3
+        background-color: #ffffff
+        
+@media (max-width: 868px)
+    .offer_menu
+        opacity: 0

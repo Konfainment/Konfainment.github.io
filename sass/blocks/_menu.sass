@@ -1,0 +1,83 @@
+.navbar
+    &_wrap_button_double_active
+        transform: translateX(2vw) rotate(360deg) scale(1)
+        z-index: 9999999
+.menu
+    &_navbar_wrap
+        transition: 1.5s ease 
+        transform: translateY(-1000px) scale(0)
+        position: fixed 
+        top: 0
+        right: 0
+        height: 100vh
+        opacity: 0.8
+        width: 45vw
+        background: linear-gradient(top left, #BF7FF9, #C91E4C)
+        z-index: 999999
+    &_navbar_wrap_active
+        transform: translateY(0px) scale(1) 
+        position: fixed 
+        top: 0
+        right: 0
+        height: 100vh
+        opacity: 0.8
+        width: 45vw
+        background: linear-gradient(top left, #BF7FF9, #C91E4C)
+        z-index: 999999
+    &_navbar_wrap_li
+        padding-top: 8.1vh
+        float: none
+        width: 50vw
+        position: relative
+        list-style: none 
+        display: flex
+        align-items: center 
+        justify-content: center
+        padding-bottom: 8.1vh
+    &_navbar_wrap_li::before
+        z-index: -9999
+        opacity: 1
+        transform: scale(0)
+        transition: 0.5s ease
+        position: absolute 
+        content: ''
+        height: 25vh
+        width: 50vw
+        left: 0
+        top: 0
+        background: #ffffff
+    &_navbar_wrap_li:hover::before
+        transition: 0.5s ease
+        opacity: 0
+        transform: scale(1)
+    &_navbar_wrap_li:first-child
+    &_navbar_wrap_navbar
+        display: flex 
+        justify-content: center 
+        align-items: center
+        text-align: center
+    &_navbar_wrap_ul
+        padding: 0
+        margin: 0
+        flex-direction: column
+        text-align: center
+    &_navbar_wrap_links
+        text-decoration: none 
+        color: #ffffff
+        +avenir
+        font-size: 20px
+        text-transform: uppercase 
+
+@keyframes moving_out 
+    0% 
+        transform: translateX(0px)
+    50% 
+        transform: translateX(50vw)
+    100% 
+        transform: translateX(0px)
+
+.offer
+    &_menu_active
+        opacity: 0
+        transition: 1.5s ease
+        transform: scale(0)
